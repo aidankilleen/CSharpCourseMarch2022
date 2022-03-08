@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonBaseClass", "CommonBa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExceptionHandling", "ExceptionHandling\ExceptionHandling.csproj", "{2C7BE95E-A100-4FCB-A5B3-DFE7D271C25A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormsHelloWorld", "WinFormsHelloWorld\WinFormsHelloWorld.csproj", "{E723EFF5-74B8-4363-84A6-19BA6FDB2347}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{2C7BE95E-A100-4FCB-A5B3-DFE7D271C25A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2C7BE95E-A100-4FCB-A5B3-DFE7D271C25A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2C7BE95E-A100-4FCB-A5B3-DFE7D271C25A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E723EFF5-74B8-4363-84A6-19BA6FDB2347}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E723EFF5-74B8-4363-84A6-19BA6FDB2347}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E723EFF5-74B8-4363-84A6-19BA6FDB2347}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E723EFF5-74B8-4363-84A6-19BA6FDB2347}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

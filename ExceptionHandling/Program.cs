@@ -13,6 +13,10 @@ namespace ExceptionHandling
             int[] list = { 1, 4, 2, 7, 9, 5, 3, 8 };
             string number = null;
 
+
+            answer = a / b;
+
+
             Random rnd = new Random();
             int r = rnd.Next(5);
             try
