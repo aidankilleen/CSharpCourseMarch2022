@@ -9,7 +9,6 @@ namespace CardProject
 
         static void Main(string[] args)
         {
-
             Console.WriteLine("Card Game");
 
             Deck deck = new Deck();

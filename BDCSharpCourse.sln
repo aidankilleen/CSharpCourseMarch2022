@@ -3,9 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31424.327
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorld", "HelloWorld\HelloWorld.csproj", "{350ECB8E-27A0-4FE5-8804-FF8F76604A43}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelloWorld", "HelloWorld\HelloWorld.csproj", "{350ECB8E-27A0-4FE5-8804-FF8F76604A43}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CardProject", "CardProject\CardProject.csproj", "{CD18B127-2553-4BAA-A637-4E7E7CC258C9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CardProject", "CardProject\CardProject.csproj", "{CD18B127-2553-4BAA-A637-4E7E7CC258C9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringFormatFeatures", "StringFormatFeatures\StringFormatFeatures.csproj", "{A55A91A5-673D-4D85-874D-FA327659CEB7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HRSystem", "HRSystem\HRSystem.csproj", "{873EBCA4-64B5-454C-9B4F-CAD783435560}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{CD18B127-2553-4BAA-A637-4E7E7CC258C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CD18B127-2553-4BAA-A637-4E7E7CC258C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CD18B127-2553-4BAA-A637-4E7E7CC258C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A55A91A5-673D-4D85-874D-FA327659CEB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A55A91A5-673D-4D85-874D-FA327659CEB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A55A91A5-673D-4D85-874D-FA327659CEB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A55A91A5-673D-4D85-874D-FA327659CEB7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{873EBCA4-64B5-454C-9B4F-CAD783435560}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{873EBCA4-64B5-454C-9B4F-CAD783435560}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{873EBCA4-64B5-454C-9B4F-CAD783435560}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{873EBCA4-64B5-454C-9B4F-CAD783435560}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
