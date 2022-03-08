@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HRSystem", "HRSystem\HRSyst
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonBaseClass", "CommonBaseClass\CommonBaseClass.csproj", "{70424D41-A4FD-4973-8B33-D9C85B8616ED}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExceptionHandling", "ExceptionHandling\ExceptionHandling.csproj", "{2C7BE95E-A100-4FCB-A5B3-DFE7D271C25A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{70424D41-A4FD-4973-8B33-D9C85B8616ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{70424D41-A4FD-4973-8B33-D9C85B8616ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{70424D41-A4FD-4973-8B33-D9C85B8616ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C7BE95E-A100-4FCB-A5B3-DFE7D271C25A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C7BE95E-A100-4FCB-A5B3-DFE7D271C25A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C7BE95E-A100-4FCB-A5B3-DFE7D271C25A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C7BE95E-A100-4FCB-A5B3-DFE7D271C25A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
