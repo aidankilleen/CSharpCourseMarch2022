@@ -16,7 +16,7 @@ namespace HRSystem
         {
             HeadCount = headCount;
         }
-
+        
         public override void Display()
         {
             Console.WriteLine("Manger:");
