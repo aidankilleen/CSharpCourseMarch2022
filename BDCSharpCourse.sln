@@ -7,15 +7,21 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelloWorld", "HelloWorld\He
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CardProject", "CardProject\CardProject.csproj", "{CD18B127-2553-4BAA-A637-4E7E7CC258C9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringFormatFeatures", "StringFormatFeatures\StringFormatFeatures.csproj", "{A55A91A5-673D-4D85-874D-FA327659CEB7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StringFormatFeatures", "StringFormatFeatures\StringFormatFeatures.csproj", "{A55A91A5-673D-4D85-874D-FA327659CEB7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HRSystem", "HRSystem\HRSystem.csproj", "{873EBCA4-64B5-454C-9B4F-CAD783435560}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HRSystem", "HRSystem\HRSystem.csproj", "{873EBCA4-64B5-454C-9B4F-CAD783435560}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonBaseClass", "CommonBaseClass\CommonBaseClass.csproj", "{70424D41-A4FD-4973-8B33-D9C85B8616ED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommonBaseClass", "CommonBaseClass\CommonBaseClass.csproj", "{70424D41-A4FD-4973-8B33-D9C85B8616ED}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExceptionHandling", "ExceptionHandling\ExceptionHandling.csproj", "{2C7BE95E-A100-4FCB-A5B3-DFE7D271C25A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExceptionHandling", "ExceptionHandling\ExceptionHandling.csproj", "{2C7BE95E-A100-4FCB-A5B3-DFE7D271C25A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormsHelloWorld", "WinFormsHelloWorld\WinFormsHelloWorld.csproj", "{E723EFF5-74B8-4363-84A6-19BA6FDB2347}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WinFormsHelloWorld", "WinFormsHelloWorld\WinFormsHelloWorld.csproj", "{E723EFF5-74B8-4363-84A6-19BA6FDB2347}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StaticTest", "StaticTest\StaticTest.csproj", "{61452595-D556-470F-97C5-37AAD1049C90}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CollectionTest", "CollectionTest\CollectionTest.csproj", "{21FA11B1-00E0-43F7-A14A-8721DD020550}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorldDB", "HelloWorldDB\HelloWorldDB.csproj", "{BAFD9E27-A697-4E81-A02D-7B77CB948A04}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +57,18 @@ Global
 		{E723EFF5-74B8-4363-84A6-19BA6FDB2347}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E723EFF5-74B8-4363-84A6-19BA6FDB2347}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E723EFF5-74B8-4363-84A6-19BA6FDB2347}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61452595-D556-470F-97C5-37AAD1049C90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61452595-D556-470F-97C5-37AAD1049C90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61452595-D556-470F-97C5-37AAD1049C90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61452595-D556-470F-97C5-37AAD1049C90}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21FA11B1-00E0-43F7-A14A-8721DD020550}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21FA11B1-00E0-43F7-A14A-8721DD020550}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21FA11B1-00E0-43F7-A14A-8721DD020550}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21FA11B1-00E0-43F7-A14A-8721DD020550}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BAFD9E27-A697-4E81-A02D-7B77CB948A04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BAFD9E27-A697-4E81-A02D-7B77CB948A04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BAFD9E27-A697-4E81-A02D-7B77CB948A04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BAFD9E27-A697-4E81-A02D-7B77CB948A04}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
