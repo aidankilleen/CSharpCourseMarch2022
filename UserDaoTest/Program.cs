@@ -34,18 +34,26 @@ namespace UserDaoTest
             dao.UpdateUser(harriet);
 
             User newUser = new User();
-            newUser.Name = "NEW USER";
-            newUser.Email = "new.user@gmail.com";
-            newUser.Active = false;
+            newUser.Name = "Karen";
+            newUser.Email = "karen@gmail.com";
+            newUser.Active = true;
 
+            Console.WriteLine(newUser);
 
-            dao..AddUser(newUser);
+            User addedUser = dao.AddUser(newUser);
 
-
-
-
+            Console.WriteLine(addedUser);
 
             dao.Close();
+
+
+            for (int i=0; i<10;i++)
+            {
+                Guid g = Guid.NewGuid();
+
+                Console.WriteLine(g);
+
+            }
 
         }
     }
