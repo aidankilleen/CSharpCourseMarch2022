@@ -144,5 +144,21 @@ namespace UserDbFrontEnd
         {
             tmrMain.Start();
         }
+
+        private void btnStartBgWorker_Click(object sender, EventArgs e)
+        {
+            bgWorker.RunWorkerAsync();
+        }
+
+        private void bgWorker_DoWork(object sender, DoWorkEventArgs e)
+        {
+
+            MessageBox.Show("starting");
+
+            Thread.Sleep(5000);
+
+            MessageBox.Show("finished");
+
+        }
     }
 }

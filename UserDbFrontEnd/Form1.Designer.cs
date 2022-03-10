@@ -43,6 +43,8 @@ namespace UserDbFrontEnd
             this.tmrMain = new System.Windows.Forms.Timer(this.components);
             this.txtCounter = new System.Windows.Forms.TextBox();
             this.btnStart = new System.Windows.Forms.Button();
+            this.bgWorker = new System.ComponentModel.BackgroundWorker();
+            this.btnStartBgWorker = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lstUsers
@@ -163,11 +165,26 @@ namespace UserDbFrontEnd
             this.btnStart.UseVisualStyleBackColor = true;
             this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
             // 
+            // bgWorker
+            // 
+            this.bgWorker.DoWork += new System.ComponentModel.DoWorkEventHandler(this.bgWorker_DoWork);
+            // 
+            // btnStartBgWorker
+            // 
+            this.btnStartBgWorker.Location = new System.Drawing.Point(636, 274);
+            this.btnStartBgWorker.Name = "btnStartBgWorker";
+            this.btnStartBgWorker.Size = new System.Drawing.Size(120, 23);
+            this.btnStartBgWorker.TabIndex = 12;
+            this.btnStartBgWorker.Text = "Start Bg Worker";
+            this.btnStartBgWorker.UseVisualStyleBackColor = true;
+            this.btnStartBgWorker.Click += new System.EventHandler(this.btnStartBgWorker_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnStartBgWorker);
             this.Controls.Add(this.btnStart);
             this.Controls.Add(this.txtCounter);
             this.Controls.Add(this.btnLongRunningProcess);
@@ -203,6 +220,8 @@ namespace UserDbFrontEnd
         private System.Windows.Forms.Timer tmrMain;
         private System.Windows.Forms.TextBox txtCounter;
         private System.Windows.Forms.Button btnStart;
+        private System.ComponentModel.BackgroundWorker bgWorker;
+        private System.Windows.Forms.Button btnStartBgWorker;
     }
 }
 
