@@ -152,13 +152,31 @@ namespace UserDbFrontEnd
 
         private void bgWorker_DoWork(object sender, DoWorkEventArgs e)
         {
-
+            /*
             MessageBox.Show("starting");
 
             Thread.Sleep(5000);
 
             MessageBox.Show("finished");
+            */
 
+            for (int i=0; i<500; i++)
+            {
+                Thread.Sleep(100);
+
+                // we can't update the ui from a bg worker
+                //txtBgCounter.Text = $"{i}";
+
+                bgWorker.ReportProgress(i / 5);
+
+            }
+
+        }
+
+        private void bgWorker_ProgressChanged(object sender, ProgressChangedEventArgs e)
+        {
+            txtBgCounter.Text = $"{e.ProgressPercentage}";
+            pgMain.Value = e.ProgressPercentage;
         }
     }
 }
