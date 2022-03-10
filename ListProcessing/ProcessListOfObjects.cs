@@ -46,8 +46,6 @@ namespace ListProcessing
                 Console.WriteLine(user);
             }
 
-            
-
         }
     }
 }

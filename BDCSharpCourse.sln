@@ -31,11 +31,14 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UserDaoLibraryConsoleTest",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListProcessing", "ListProcessing\ListProcessing.csproj", "{355A9FE8-999B-463A-A759-302E485D475E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserDbFrontEnd", "UserDbFrontEnd\UserDbFrontEnd.csproj", "{F72F5B9C-9DC5-4A92-9FFE-077D92B59737}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		UserDaoLibrary\UserDaoLibrary.projitems*{355a9fe8-999b-463a-a759-302e485d475e}*SharedItemsImports = 5
 		UserDaoLibrary\UserDaoLibrary.projitems*{4d7a85ab-8198-4519-b343-4f618a6f1e65}*SharedItemsImports = 5
 		UserDaoLibrary\UserDaoLibrary.projitems*{85b74fb2-03cb-49ce-911d-28cb3985dc00}*SharedItemsImports = 13
+		UserDaoLibrary\UserDaoLibrary.projitems*{f72f5b9c-9dc5-4a92-9ffe-077d92b59737}*SharedItemsImports = 5
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -94,6 +97,10 @@ Global
 		{355A9FE8-999B-463A-A759-302E485D475E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{355A9FE8-999B-463A-A759-302E485D475E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{355A9FE8-999B-463A-A759-302E485D475E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F72F5B9C-9DC5-4A92-9FFE-077D92B59737}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F72F5B9C-9DC5-4A92-9FFE-077D92B59737}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F72F5B9C-9DC5-4A92-9FFE-077D92B59737}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F72F5B9C-9DC5-4A92-9FFE-077D92B59737}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
