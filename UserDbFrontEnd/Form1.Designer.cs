@@ -29,6 +29,7 @@ namespace UserDbFrontEnd
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.lstUsers = new System.Windows.Forms.ListBox();
             this.txtId = new System.Windows.Forms.TextBox();
             this.txtName = new System.Windows.Forms.TextBox();
@@ -38,6 +39,10 @@ namespace UserDbFrontEnd
             this.btnEdit = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
+            this.btnLongRunningProcess = new System.Windows.Forms.Button();
+            this.tmrMain = new System.Windows.Forms.Timer(this.components);
+            this.txtCounter = new System.Windows.Forms.TextBox();
+            this.btnStart = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lstUsers
@@ -127,11 +132,45 @@ namespace UserDbFrontEnd
             this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
+            // btnLongRunningProcess
+            // 
+            this.btnLongRunningProcess.Location = new System.Drawing.Point(617, 106);
+            this.btnLongRunningProcess.Name = "btnLongRunningProcess";
+            this.btnLongRunningProcess.Size = new System.Drawing.Size(143, 23);
+            this.btnLongRunningProcess.TabIndex = 9;
+            this.btnLongRunningProcess.Text = "Long Running Process";
+            this.btnLongRunningProcess.UseVisualStyleBackColor = true;
+            this.btnLongRunningProcess.Click += new System.EventHandler(this.btnLongRunningProcess_Click);
+            // 
+            // tmrMain
+            // 
+            this.tmrMain.Tick += new System.EventHandler(this.tmrMain_Tick);
+            // 
+            // txtCounter
+            // 
+            this.txtCounter.Location = new System.Drawing.Point(530, 27);
+            this.txtCounter.Name = "txtCounter";
+            this.txtCounter.Size = new System.Drawing.Size(100, 23);
+            this.txtCounter.TabIndex = 10;
+            // 
+            // btnStart
+            // 
+            this.btnStart.Location = new System.Drawing.Point(681, 36);
+            this.btnStart.Name = "btnStart";
+            this.btnStart.Size = new System.Drawing.Size(75, 23);
+            this.btnStart.TabIndex = 11;
+            this.btnStart.Text = "Start";
+            this.btnStart.UseVisualStyleBackColor = true;
+            this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnStart);
+            this.Controls.Add(this.txtCounter);
+            this.Controls.Add(this.btnLongRunningProcess);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.btnEdit);
@@ -160,6 +199,10 @@ namespace UserDbFrontEnd
         private System.Windows.Forms.Button btnEdit;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Button btnCancel;
+        private System.Windows.Forms.Button btnLongRunningProcess;
+        private System.Windows.Forms.Timer tmrMain;
+        private System.Windows.Forms.TextBox txtCounter;
+        private System.Windows.Forms.Button btnStart;
     }
 }
 

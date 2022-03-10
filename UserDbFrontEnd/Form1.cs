@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using UserDaoLibrary;
@@ -15,6 +16,7 @@ namespace UserDbFrontEnd
     {
 
         private UserDao dao = new UserDao();
+        private int count = 0;
 
         public Form1()
         {
@@ -124,6 +126,23 @@ namespace UserDbFrontEnd
                 btnCancel.Enabled = false;
                 btnEdit.Enabled = true;
             }
+        }
+
+        private void btnLongRunningProcess_Click(object sender, EventArgs e)
+        {
+            Thread.Sleep(5000);
+        }
+
+        private void tmrMain_Tick(object sender, EventArgs e)
+        {
+
+            txtCounter.Text = $"{count++}";
+
+        }
+
+        private void btnStart_Click(object sender, EventArgs e)
+        {
+            tmrMain.Start();
         }
     }
 }
