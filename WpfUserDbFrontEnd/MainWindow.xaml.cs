@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -22,6 +24,9 @@ namespace WpfUserDbFrontEnd
     public partial class MainWindow : Window
     {
         UserDao dao = new UserDao();
+
+        BackgroundWorker bgWorker;
+
 
         public MainWindow()
         {
@@ -70,6 +75,63 @@ namespace WpfUserDbFrontEnd
 
             btnSave.IsEnabled = true;
             btnAdd.IsEnabled = false;
+        }
+
+        private void btnLongRunningProcess_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnLongRunningProcess_Click_1(object sender, RoutedEventArgs e)
+        {
+            Thread.Sleep(5000);
+        }
+
+        private void btnStartBackgroundWorker_Click(object sender, RoutedEventArgs e)
+        {
+
+            bgWorker = new BackgroundWorker();
+            bgWorker.DoWork += BgWorker_DoWork;
+            bgWorker.ProgressChanged += BgWorker_ProgressChanged;
+            bgWorker.WorkerReportsProgress = true;
+            bgWorker.WorkerSupportsCancellation = true;
+            bgWorker.RunWorkerAsync();
+
+            btnCancel.IsEnabled = true;
+            btnStartBackgroundWorker.IsEnabled = false;
+        }
+
+        private void BgWorker_ProgressChanged(object sender, ProgressChangedEventArgs e)
+        {
+            pgMain.Value = e.ProgressPercentage;
+        }
+
+        private void BgWorker_DoWork(object sender, DoWorkEventArgs e)
+        {
+            for(int i=0; i<500; i++)
+            {
+                Thread.Sleep(100);
+                bgWorker.ReportProgress(i / 5);
+
+                if (bgWorker.CancellationPending)
+                {
+                    break;
+                }
+            }
+
+            MessageBox.Show("finished");
+            /*
+            MessageBox.Show("starting...");
+            Thread.Sleep(5000);
+            MessageBox.Show("finished");
+            */
+        }
+
+        private void btnCancel_Click(object sender, RoutedEventArgs e)
+        {
+            bgWorker.CancelAsync();
+            btnCancel.IsEnabled = false;
+            btnStartBackgroundWorker.IsEnabled = true;
         }
     }
 }

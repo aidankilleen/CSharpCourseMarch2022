@@ -15,6 +15,10 @@
         <CheckBox x:Name="chkActive" Content="Active" HorizontalAlignment="Left" Margin="308,246,0,0" VerticalAlignment="Top" IsEnabled="False"/>
         <Button x:Name="btnAdd" Content="Add" HorizontalAlignment="Left" Margin="308,383,0,0" VerticalAlignment="Top" Click="btnAdd_Click_1"/>
         <Button x:Name="btnSave" Content="Save" HorizontalAlignment="Left" Margin="371,383,0,0" VerticalAlignment="Top" IsEnabled="False"/>
+        <Button x:Name="btnLongRunningProcess" Content="LongRunningProcess" HorizontalAlignment="Left" Height="54" Margin="597,71,0,0" VerticalAlignment="Top" Width="134" Click="btnLongRunningProcess_Click_1"/>
+        <Button x:Name="btnStartBackgroundWorker" Content="Start Bg Worker" HorizontalAlignment="Left" Margin="611,227,0,0" VerticalAlignment="Top" Click="btnStartBackgroundWorker_Click"/>
+        <ProgressBar x:Name="pgMain" HorizontalAlignment="Left" Height="10" Margin="558,199,0,0" VerticalAlignment="Top" Width="100"/>
+        <Button x:Name="btnCancel" Content="Cancel" HorizontalAlignment="Left" Margin="611,261,0,0" VerticalAlignment="Top" IsEnabled="False" Width="87" Click="btnCancel_Click"/>
 
     </Grid>
 </Window>
