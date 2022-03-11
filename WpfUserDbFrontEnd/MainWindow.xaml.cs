@@ -119,7 +119,7 @@ namespace WpfUserDbFrontEnd
                 }
             }
 
-            MessageBox.Show("finished");
+            //MessageBox.Show("finished");
             /*
             MessageBox.Show("starting...");
             Thread.Sleep(5000);

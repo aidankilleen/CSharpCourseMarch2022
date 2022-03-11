@@ -8,7 +8,7 @@ namespace UserDaoLibrary
     class UserDao
     {
         private SqlConnection connection;
-        private string connectionString = "Server=tcp:professionaltraining.database.windows.net,1433;Initial Catalog=XmlTestDb;Persist Security Info=False;User ID=ptuser;Password=Training2022#@!5;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
+        private string connectionString = "Server=tcp:professionaltraining.database.windows.net,1433;Initial Catalog=XmlTestDb;Persist Security Info=False;User ID=ptuser;Password=<>;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
 
         public UserDao()
         {
@@ -57,8 +57,14 @@ namespace UserDaoLibrary
                 bool active = rdr.GetInt32(rdr.GetOrdinal("active")) == 1;
 
                 user = new User(id, name, email, active);
+            } else
+            {
+                // throw an exception to let the calling program know that the user doesn't exist
+                rdr.Close();
+                throw new UserDaoException($"User {id} not found");
             }
             rdr.Close();
+
             return user;
         }
 
@@ -66,18 +72,27 @@ namespace UserDaoLibrary
         {
             string sql = $"delete from users where id = {id}";
             SqlCommand cmd = new SqlCommand(sql, connection);
-            cmd.ExecuteNonQuery();
+            if (cmd.ExecuteNonQuery() == 0)
+            {
+                throw new UserDaoException($"User {id} not deleted");
+            }
         }
         
         public User AddUser(User userToAdd)
         {
-            string sql = @$"insert into users 
-                 (name, email, active)
-                 values('{ userToAdd.Name }', 
-                        '{ userToAdd.Email }', 
-                        { (userToAdd.Active ? 1 : 0) })";
+            string sql = @$"insert into users (name, email, active) values(@name, @email, @active)";
 
+            Console.WriteLine(sql);
             SqlCommand cmd = new SqlCommand(sql, connection);
+
+            SqlParameter nameParam = new SqlParameter("@name", userToAdd.Name);
+            SqlParameter emailParam = new SqlParameter("@email", userToAdd.Email);
+            SqlParameter activeParam = new SqlParameter("@active", userToAdd.Active ? 1 : 0);
+
+            cmd.Parameters.Add(nameParam);
+            cmd.Parameters.Add(emailParam);
+            cmd.Parameters.Add(activeParam);
+
             cmd.ExecuteNonQuery();
 
             // get the id of the new user
