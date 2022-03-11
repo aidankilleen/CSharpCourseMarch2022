@@ -4,7 +4,7 @@ using System.Text;
 
 namespace UserDaoLibrary
 {
-    class UserDaoException : Exception
+    public class UserDaoException : Exception
     {
         public UserDaoException(String message)
             :base(message)

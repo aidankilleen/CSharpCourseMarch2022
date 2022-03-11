@@ -39,12 +39,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UserDaoLibraryFeatures", "U
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserDaoLibraryFeaturesTest", "UserDaoLibraryFeaturesTest\UserDaoLibraryFeaturesTest.csproj", "{ADA4BD70-FC07-44A6-95C3-972870DF9DF5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadSynchronisationDemo", "ThreadSynchronisationDemo\ThreadSynchronisationDemo.csproj", "{EA3B5DB2-4E96-4DCD-B73E-99154578B01C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorldWebApp", "HelloWorldWebApp\HelloWorldWebApp.csproj", "{73C93591-6914-4973-A9AC-54B544A74A4F}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		UserDaoLibrary\UserDaoLibrary.projitems*{21613e17-ddc9-4cea-a8c9-9141fc7d2c1f}*SharedItemsImports = 5
 		UserDaoLibrary\UserDaoLibrary.projitems*{355a9fe8-999b-463a-a759-302e485d475e}*SharedItemsImports = 5
 		UserDaoLibrary\UserDaoLibrary.projitems*{4d7a85ab-8198-4519-b343-4f618a6f1e65}*SharedItemsImports = 5
 		UserDaoLibrary\UserDaoLibrary.projitems*{606900a2-4b00-4df5-964a-ff297d285e29}*SharedItemsImports = 5
+		UserDaoLibrary\UserDaoLibrary.projitems*{73c93591-6914-4973-a9ac-54b544a74a4f}*SharedItemsImports = 5
 		UserDaoLibrary\UserDaoLibrary.projitems*{85b74fb2-03cb-49ce-911d-28cb3985dc00}*SharedItemsImports = 13
 		UserDaoLibrary\UserDaoLibrary.projitems*{ada4bd70-fc07-44a6-95c3-972870df9df5}*SharedItemsImports = 5
 		UserDaoLibrary\UserDaoLibrary.projitems*{f72f5b9c-9dc5-4a92-9ffe-077d92b59737}*SharedItemsImports = 5
@@ -122,6 +127,14 @@ Global
 		{ADA4BD70-FC07-44A6-95C3-972870DF9DF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ADA4BD70-FC07-44A6-95C3-972870DF9DF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ADA4BD70-FC07-44A6-95C3-972870DF9DF5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA3B5DB2-4E96-4DCD-B73E-99154578B01C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA3B5DB2-4E96-4DCD-B73E-99154578B01C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA3B5DB2-4E96-4DCD-B73E-99154578B01C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA3B5DB2-4E96-4DCD-B73E-99154578B01C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73C93591-6914-4973-A9AC-54B544A74A4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73C93591-6914-4973-A9AC-54B544A74A4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73C93591-6914-4973-A9AC-54B544A74A4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73C93591-6914-4973-A9AC-54B544A74A4F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

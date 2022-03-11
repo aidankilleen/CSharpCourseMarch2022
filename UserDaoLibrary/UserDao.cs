@@ -5,7 +5,7 @@ using System.Text;
 
 namespace UserDaoLibrary
 {
-    class UserDao
+    public class UserDao
     {
         private SqlConnection connection;
         private string connectionString = "Server=tcp:professionaltraining.database.windows.net,1433;Initial Catalog=XmlTestDb;Persist Security Info=False;User ID=ptuser;Password=<>;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
